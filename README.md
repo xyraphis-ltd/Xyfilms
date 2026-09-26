@@ -80,7 +80,7 @@ To add a film, drop the poster into `src/assets/images/` and add an entry to `fi
 `npm run build` outputs a static site to `dist/`. Because the site uses client-side routing (`BrowserRouter`), the host must serve `index.html` for unknown paths:
 
 - **Netlify:** add `public/_redirects` containing `/*  /index.html  200`
-- **Vercel:** works out of the box for Vite projects (or add a rewrite to `/index.html`)
+- **Vercel:** already configured in `vercel.json` (SPA rewrite + long-term caching for hashed assets)
 - **Nginx:** `try_files $uri /index.html;`
 
 ## Known TODOs

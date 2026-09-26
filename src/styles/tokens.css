@@ -1,0 +1,27 @@
+:root {
+  /* Colour */
+  --color-bg: #0a0908;
+  --color-surface: #080706;
+  --color-surface-band: #0c0b0a;
+  --color-surface-card: #100f0d;
+  --color-overlay: rgba(6, 5, 5, 0.97);
+  --color-gold: #e9c877;
+  --color-gold-light: #fff0ce;
+  --color-text: #edeae4;
+  --color-rule: rgba(255, 255, 255, 0.07);
+  --color-grid-line: rgba(255, 255, 255, 0.06);
+  --color-gold-border: rgba(233, 200, 119, 0.35);
+  --color-gold-tint: rgba(233, 200, 119, 0.08);
+
+  /* Type */
+  --font-display: 'Bodoni Moda', serif;
+  --font-ui: 'Jost', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Space */
+  --gutter: clamp(20px, 5vw, 56px);
+  --gutter-header: clamp(16px, 4vw, 28px);
+  --section-y: clamp(56px, 9vw, 110px);
+  --page-top: 82px;
+  --tap-target: 44px;
+}

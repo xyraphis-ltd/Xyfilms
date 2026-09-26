@@ -1,0 +1,26 @@
+@keyframes xyMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.band {
+  padding: 22px 0;
+  border-top: 1px solid var(--color-rule);
+  border-bottom: 1px solid var(--color-rule);
+  overflow: hidden;
+  background: var(--color-surface-band);
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: xyMarquee 34s linear infinite;
+}
+
+.item {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 4.4vw, 34px);
+  color: rgba(233, 200, 119, 0.75);
+  padding-right: 48px;
+  white-space: nowrap;
+}

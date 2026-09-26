@@ -1,0 +1,29 @@
+.strip {
+  margin-top: 66px;
+  border-top: 1px solid var(--color-rule);
+  border-bottom: 1px solid var(--color-rule);
+  background: var(--color-surface);
+  overflow: hidden;
+  padding: 11px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 4px var(--gutter-header);
+  font-family: var(--font-mono);
+  font-size: clamp(9px, 2.4vw, 12px);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.date {
+  color: rgba(237, 234, 228, 0.72);
+}
+
+.time {
+  color: var(--color-gold);
+}

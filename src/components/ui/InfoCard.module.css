@@ -1,0 +1,28 @@
+.card {
+  padding: clamp(20px, 3vw, 28px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap, 12px);
+}
+
+.gold {
+  border: 1px solid rgba(233, 200, 119, 0.3);
+  background: rgba(233, 200, 119, 0.04);
+}
+
+.neutral {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.neutral .label {
+  color: rgba(237, 234, 228, 0.45);
+}

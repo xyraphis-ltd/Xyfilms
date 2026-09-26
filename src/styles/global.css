@@ -1,0 +1,96 @@
+@import './tokens.css';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+}
+
+body {
+  font-family: 'Jost', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* :where() keeps these element defaults at zero specificity so component
+   classes always win (the original design used inline styles for this). */
+:where(a) {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+:where(a:hover) {
+  color: var(--color-gold-light);
+}
+
+input,
+textarea,
+button {
+  font-size: 16px;
+}
+
+/* The custom reticle replaces the system cursor on precise pointers. */
+@media (pointer: fine) {
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  video,
+  label {
+    cursor: none;
+  }
+}
+
+/* ── Accessibility helpers ─────────────────────────────── */
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 10000;
+  padding: 10px 16px;
+  background: var(--color-gold);
+  color: var(--color-bg);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+  color: var(--color-bg);
+}
+
+:focus-visible {
+  outline: 1px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

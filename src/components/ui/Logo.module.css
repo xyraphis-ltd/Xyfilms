@@ -1,0 +1,14 @@
+.logo {
+  mix-blend-mode: screen;
+  display: block;
+}
+
+.small {
+  height: clamp(26px, 5.6vw, 34px);
+  width: auto;
+}
+
+.large {
+  height: 200px;
+  width: 231px;
+}

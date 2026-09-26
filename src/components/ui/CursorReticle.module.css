@@ -1,0 +1,47 @@
+.reticle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  z-index: 9999;
+  pointer-events: none;
+  transition: width 0.18s ease, height 0.18s ease, margin 0.18s ease, opacity 0.3s ease;
+  mix-blend-mode: difference;
+  opacity: 0;
+  will-change: transform;
+}
+
+@media (pointer: coarse) {
+  .reticle {
+    display: none;
+  }
+}
+
+.frame {
+  position: absolute;
+  inset: 0;
+}
+
+.corner {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+}
+
+.tl { top: 0; left: 0; border-top: 1px solid var(--color-gold); border-left: 1px solid var(--color-gold); }
+.tr { top: 0; right: 0; border-top: 1px solid var(--color-gold); border-right: 1px solid var(--color-gold); }
+.bl { bottom: 0; left: 0; border-bottom: 1px solid var(--color-gold); border-left: 1px solid var(--color-gold); }
+.br { bottom: 0; right: 0; border-bottom: 1px solid var(--color-gold); border-right: 1px solid var(--color-gold); }
+
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 3px;
+  margin: -1.5px 0 0 -1.5px;
+  background: var(--color-gold);
+  border-radius: 50%;
+}

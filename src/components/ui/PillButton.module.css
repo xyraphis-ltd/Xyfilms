@@ -1,0 +1,25 @@
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid var(--color-gold-border);
+  border-radius: 999px;
+  padding: 10px 20px;
+  min-height: var(--tap-target);
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.pill:hover {
+  border-color: var(--color-gold);
+  background: var(--color-gold-tint);
+}
+
+.menu {
+  padding: 10px 18px 10px 20px;
+}

@@ -1,0 +1,9 @@
+# Normalise line endings in the repo; binary assets are never diffed or converted.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.mp4 binary
+*.ico binary

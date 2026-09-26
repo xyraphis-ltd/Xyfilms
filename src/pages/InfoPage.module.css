@@ -1,0 +1,40 @@
+.page {
+  padding-top: var(--page-top);
+  min-height: 70vh;
+}
+
+.body {
+  padding: clamp(36px, 6vw, 64px) var(--gutter) var(--section-y);
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(20px, 4vw, 64px);
+}
+
+.text {
+  margin: 0;
+  flex: 2 1 420px;
+  font-family: var(--font-display);
+  font-size: clamp(20px, 3vw, 34px);
+  line-height: 1.4;
+  color: rgba(237, 234, 228, 0.8);
+  max-width: 30ch;
+}
+
+.contact {
+  --card-gap: 14px;
+  flex: 1 1 380px;
+  align-self: flex-start;
+}
+
+.email {
+  font-size: clamp(17px, 1.9vw, 24px);
+}
+
+.note {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(237, 234, 228, 0.4);
+}

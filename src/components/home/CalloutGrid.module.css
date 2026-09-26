@@ -1,0 +1,42 @@
+.grid {
+  padding: var(--section-y) var(--gutter);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 2px;
+  background: var(--color-grid-line);
+}
+
+.tile {
+  background: var(--color-bg);
+  padding: clamp(28px, 5vw, 56px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: var(--color-text);
+  min-height: 240px;
+  justify-content: flex-end;
+}
+
+.tile:hover {
+  background: rgba(233, 200, 119, 0.06);
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.6vw, 44px);
+  line-height: 1.2;
+}
+
+.cta {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: rgba(237, 234, 228, 0.55);
+}

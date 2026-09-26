@@ -1,0 +1,54 @@
+.page {
+  padding-top: var(--page-top);
+}
+
+.body {
+  padding: clamp(36px, 6vw, 64px) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 4vw, 44px);
+}
+
+.lede {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.6vw, 30px);
+  line-height: 1.45;
+  color: var(--color-text);
+  width: 100%;
+  max-width: none;
+  text-wrap: pretty;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(20px, 3vw, 40px);
+  align-items: stretch;
+}
+
+.cardText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(237, 234, 228, 0.72);
+  max-width: 44ch;
+  text-wrap: pretty;
+}
+
+.contactCard {
+  justify-content: space-between;
+}
+
+.email {
+  font-size: clamp(17px, 1.9vw, 26px);
+}
+
+.note {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(237, 234, 228, 0.35);
+}

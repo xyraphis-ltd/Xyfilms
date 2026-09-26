@@ -1,0 +1,12 @@
+.email {
+  font-family: var(--font-display);
+  color: var(--color-gold);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.email:hover {
+  color: var(--color-text);
+}
